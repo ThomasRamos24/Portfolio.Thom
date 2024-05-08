@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import Linkedin from '../components/icons/Linkedin.astro';
+import Github from '../components/icons/Github.astro'
+import SocialIcons from '../components/SocialIcons.astro';
+import Mail from '../components/icons/Mail.astro'
+import Experience from '../components/SobreMi.astro'
+import SectionContainer from '../components/SectionContainer.astro';
+import Briefcase from '../components/icons/Briefcase.astro'
+import Code from '../components/icons/code.astro';
+import Proyects from '../components/Proyects.astro';
+import Footer from '../components/Footer.astro'
+import SobreMi from '../components/SobreMi.astro';
+import Contacto from '../components/Contacto.astro';
+
+---
+
+<Layout title="Porfolio de Thomas Ramos - Desarrollador y Programador Web">
+	<main class="px-4">
+
+
+		<SectionContainer py-44 pb-24>
+				<h1 class="text-white text-3xl md:text-4x1 lg:text-5xl font-bold flex gap-x-4 pb-6 lg:pb-10">Hola,soy Thomas 
+					<a class="flex justify-center items-center" href="https://www.linkedin.com/in/thomas-ezequiel-ramos2023/" target="_blank"><Badge>Preparado para trabajar</Badge></a>
+				</h1>
+
+				<h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px] text-pretty">
+					<span>Desarrollador web autodidacta.</span>
+					<span class="text-yellow-200">De Buenos Aires, Argentina😄</span>,
+					<span class="opacity-80">especializado en creación de aplicaciones unicas.</span>
+				</h2>
+
+				<nav class="flex gap-4 mt-8 flex-wrap">
+					<SocialIcons href="https://www.linkedin.com/in/thomas-ezequiel-ramos2023/">
+						<Linkedin class="size-4 md:size-6"></Linkedin>Linkedin
+					</SocialIcons>
+					<SocialIcons href="https://github.com/ThomasRamos24">
+						<Github class="size-4 md:size-6"></Github>Github
+					</SocialIcons>
+					<SocialIcons href="https://mail.google.com/mail/u/1/#inbox">
+						<Mail class="size-4 md:size-6"></Mail>Gmail
+					</SocialIcons>
+				</nav>
+		</SectionContainer>
+			   
+		
+		<SectionContainer id="proyectos">
+			<h2 class="flex gap-x-3 item-center text-3xl font-semibold mb-4">
+				<Code class="size-8"></Code>
+				Proyectos
+			</h2>
+			
+			<Proyects></Proyects>
+		</SectionContainer>
+		
+		<SectionContainer id="sobre-mi">
+			<SobreMi></SobreMi>
+		</SectionContainer>
+
+
+		<SectionContainer id="contacto">
+           <Contacto></Contacto>
+		</SectionContainer>
+
+
+			<Footer></Footer>
+		</main>
+</Layout>
+
